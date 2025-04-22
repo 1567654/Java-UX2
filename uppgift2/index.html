@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3.5.13"
+    integrity="sha384-G++pO/TtP6SeNEBuO/CYuppmlcEhA0Rj9IcY5feVJXhyYraEA8CKVZV38iDXLTyJ" crossorigin="anonymous">
+    </script>
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./foodCardModul.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="tab">Recept</div>
+        <div class="tab">Kundkort</div>
+    </header>
+
+    <main>
+        <div id="search">
+            <input type="text" id="searchbar" placeholder="Sök här...">
+            <button id="placeholder-icon">filter</button>
+        </div>
+
+        <div id="Kundfavoriter">
+            <h2>Kundfavoriter</h2>
+            <div id="card">
+                <img src="mat.jpg" alt="mat">
+                <div id="MatInfo">
+                    <h2>Maträt</h2>
+                    <h4>Typ</h4>
+                    <h4>Antal potioner</h4>
+                    <h4>Tid</h4>
+                    <h4>Innehåller: ???</h4>
+                </div>
+                <hr>
+                <div id="Anpassning">
+                    <h3>Anpssning</h3>
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div id="card">
+                <img src="mat.jpg" alt="mat">
+                <div id="MatInfo">
+                    <h2>Maträt</h2>
+                    <h4>Typ</h4>
+                    <h4>Antal potioner</h4>
+                    <h4>Tid</h4>
+                    <h4>Innehåller: ???</h4>
+                </div>
+                <hr>
+                <div id="Anpassning">
+                    <h3>Anpssning</h3>
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div id="card">
+                <img src="mat.jpg" alt="mat">
+                <div id="MatInfo">
+                    <h2>Maträt</h2>
+                    <h4>Typ</h4>
+                    <h4>Antal potioner</h4>
+                    <h4>Tid</h4>
+                    <h4>Innehåller: ???</h4>
+                </div>
+                <hr>
+                <div id="Anpassning">
+                    <h3>Anpssning</h3>
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+            <foodCrad bild="mat.jpg" MaträttNamn="Köttbullar"></foodCrad>
+
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="filter-menu">
+
+            <div class="filter-header">
+                <h3>Filter</h3>
+                <div><button id="close">close</button></div>
+            </div>
+
+            <div class="filter-body">
+
+                <div class="left-body">
+                    <div class="item">
+                        Typ av rätt
+                        <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                    </div>
+                    <div class="item">
+                        Kategori
+                        <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                    </div>
+                    <div class="item">
+                        Anpassning
+                        <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                    </div>
+                    <div class="item">
+                        Allergier & preferenser
+                        <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                    </div>
+                    <div class="item">
+                        Tema
+                        <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                    </div>
+                    <div class="item">
+                        Ingredienser
+                        <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                    </div>
+                </div>
+
+                <div class="right-body">
+                    <div class="item">
+                        Tillagningsmetod
+                        <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                    </div>
+                    <div class="item">
+                        Tillagningstid
+                        <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                    </div>
+                    <div class="item">
+                        Förberedelsetid
+                        <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                    </div>
+                    <div class="item">
+                        Kostnad
+                        <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                    </div>
+                    <div class="item">
+                        Utrustning på plats
+                        <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                    </div>
+                    <div class="item">
+                        Buffé & Menyset
+                        <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="filter-footer">
+                <button>Sök recept</button>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
