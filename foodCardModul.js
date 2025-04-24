@@ -1,24 +1,31 @@
-const foodCradApp = Vue.createApp({})
+const foodCardApp = Vue.createApp({})
 
-foodCradApp.component('foodCrad', {
-    props: ['bild', 'MaträttNamn'],
-    template: `<div id="card">
-                <img src={{bild}} alt="mat">
-                <div id="MatInfo">
-                    <h2>{{MaträttNamn}}</h2>
-                    <h4>Typ</h4>
-                    <h4>Antal potioner</h4>
-                    <h4>Tid</h4>
-                    <h4>Innehåller: ???</h4>
-                </div>
-                <hr>
-                <div id="Anpassning">
-                    <h3>Anpssning</h3>
-                    <ul>
-                        
-                    </ul>
-                </div>
-            </div>`
+foodCardApp.component('food-card', {
+    props: {
+        image: String,
+        title: String,
+        numberofservings: String,
+        cookingtime: String
+    },
+    template: `
+        <div id="card">
+            <img :src="image" alt="mat">
+            <div id="foodInfo">
+                <h2>{{ title }}</h2>
+                <h4>Typ</h4>
+                <h4>Antal portioner: {{numberofservings}}</h4>
+                <h4>kastrul: {{cookingtime}} min</h4>
+                <h4>Innehåller: ???</h4>
+            </div>
+            <hr>
+            <div id="adaptation">
+                <h3>Anpassning</h3>
+                <ul>
+                    <!-- Anpassningslista -->
+                </ul>
+            </div>
+        </div>
+    `
 })
 
-foodCradApp.mount('#app')
+foodCardApp.mount('#kundfavoriter')
