@@ -17,6 +17,7 @@ header {
 main{
     justify-content: center;
     padding: 1em;
+    background-color: white;
 }
 
 .tab {
@@ -33,13 +34,11 @@ main{
 }
 
 #searchbar {
+    grid-column: span 2;
     width: 100%;
     height: 2.5em;
     border-radius: 0.5em;
 }
-
-#placeholder-icon:active{
-}    
 
 #card{
     display: flex;
@@ -83,12 +82,15 @@ footer {
     position:fixed;
     width: 100%;
     max-width: 600px;
-    top: 34vh;
+    top: 25vh;
     padding: 1em 1em 0 1em;
     z-index: 5;
 }
 
 .filter-menu {
+    overflow: auto;
+    height: 73vh;
+    max-height: 73vh;
     box-shadow: 2px -2px 8px 0px black;
     border-radius: 0.5em 0.5em 0em 0em;
     background-color: white;
@@ -138,13 +140,22 @@ footer {
     font-size: large;
 }
 
+.drop {
+    width: 18px;
+}
+
 .item-content {
-    overflow: hidden;
+    overflow:auto;
     display: grid;
-    grid-template-columns: repeat(2, 0fr);
+    grid-template-columns: repeat(2, 115px);
     gap: 0.5em;
     border-bottom: 1px solid;
     height: 0px;
+}
+
+.item-content > h6 {
+    margin: 0;
+    grid-column: span 2;
 }
 
 .tag {
@@ -157,8 +168,38 @@ footer {
     border: 1px solid lightgray;
 }
 
-.drop {
-    width: 18px;
+.tag-L {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 2;
+    height: 1em;
+    padding: 0.4em;
+    border-radius: 3em;
+    border: 1px solid lightgray;
+}
+
+.tag:hover {
+    border: 1px solid black;
+}
+
+.timer {
+    display: grid;
+    grid-template-columns: repeat(3, 6em);
+    grid-template-rows: repeat(2, 2em) ;
+}
+
+.gap {
+}
+
+.interval {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 0.5em;
 }
 
 .filter-footer {
@@ -177,22 +218,18 @@ footer {
 
 @keyframes showFilter {
     from {
-      /* pushes the sun down past the viewport */
       transform: translateY(110vh);
     }
     to {
-      /* returns the sun to its default position */
       transform: translateY(0);
     }
-  }
+}
 
 @keyframes hideFilter {
     from {
-      /* pushes the sun down past the viewport */
       transform: translateY(0);
     }
     to {
-      /* returns the sun to its default position */
       transform: translateY(110vh);
     }
-  }
+}
