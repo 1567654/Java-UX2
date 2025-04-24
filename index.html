@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@3.5.13"
-    integrity="sha384-G++pO/TtP6SeNEBuO/CYuppmlcEhA0Rj9IcY5feVJXhyYraEA8CKVZV38iDXLTyJ" crossorigin="anonymous">
-    </script>
+        integrity="sha384-G++pO/TtP6SeNEBuO/CYuppmlcEhA0Rj9IcY5feVJXhyYraEA8CKVZV38iDXLTyJ" crossorigin="anonymous">
+        </script>
     <title>Document</title>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -26,11 +26,11 @@
             <button id="placeholder-icon">filter</button>
         </div>
 
-        <div id="Kundfavoriter">
+        <div id="kundfavoriter">
             <h2>Kundfavoriter</h2>
             <div id="card">
                 <img src="mat.jpg" alt="mat">
-                <div id="MatInfo">
+                <div id="foodInfo">
                     <h2>Maträt</h2>
                     <h4>Typ</h4>
                     <h4>Antal potioner</h4>
@@ -38,50 +38,15 @@
                     <h4>Innehåller: ???</h4>
                 </div>
                 <hr>
-                <div id="Anpassning">
+                <div id="adaptation">
                     <h3>Anpssning</h3>
                     <ul>
-                        
+
                     </ul>
                 </div>
             </div>
 
-            <div id="card">
-                <img src="mat.jpg" alt="mat">
-                <div id="MatInfo">
-                    <h2>Maträt</h2>
-                    <h4>Typ</h4>
-                    <h4>Antal potioner</h4>
-                    <h4>Tid</h4>
-                    <h4>Innehåller: ???</h4>
-                </div>
-                <hr>
-                <div id="Anpassning">
-                    <h3>Anpssning</h3>
-                    <ul>
-                        
-                    </ul>
-                </div>
-            </div>
-            <div id="card">
-                <img src="mat.jpg" alt="mat">
-                <div id="MatInfo">
-                    <h2>Maträt</h2>
-                    <h4>Typ</h4>
-                    <h4>Antal potioner</h4>
-                    <h4>Tid</h4>
-                    <h4>Innehåller: ???</h4>
-                </div>
-                <hr>
-                <div id="Anpassning">
-                    <h3>Anpssning</h3>
-                    <ul>
-                        
-                    </ul>
-                </div>
-            </div>
-            <foodCrad bild="mat.jpg" MaträttNamn="Köttbullar"></foodCrad>
-
+            <food-card image="mat.jpg" title="JJ's Super steak" numberofservings="10" cookingtime="30"></food-card>
         </div>
     </main>
 
