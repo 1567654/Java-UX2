@@ -1,16 +1,15 @@
 html {
     box-sizing: border-box;
+    max-width: 600px;
 }
 
 body {
-    max-width: 600px;
     margin: 0;
 }
 
 header {
     display: flex;
     gap: 5px;
-    width: 100%;
     padding: 0.5em 0.5em 0em 0.5em;
     background-color: lightgray;
 }
@@ -44,9 +43,8 @@ main{
 
 #card{
     display: flex;
-    /* width: 90%; */
     height: 200px;
-    margin: 10px;
+    margin: 10px 0 10px 0;
 
     flex-direction: row;
     flex-wrap: nowrap;
@@ -127,9 +125,36 @@ footer {
 
 .item {
     display: flex;
+    flex-direction: column;
+}
+
+.item-menu > button {
+    display: flex;
     justify-content: space-between;
+    background-color: white;
+    border: none;
+    width: 100%;
     padding: 1em;
+    font-size: large;
+}
+
+.item-content {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 0.5em;
     border-bottom: 1px solid;
+    height: 0px;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1em;
+    padding: 0.4em;
+    border-radius: 3em;
+    border: 1px solid lightgray;
 }
 
 .drop {
