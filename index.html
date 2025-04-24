@@ -10,7 +10,7 @@
     <title>Document</title>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="./foodCardModul.js"></script>
+    <script type="module" src="./foodCardModule.js"></script>
 </head>
 
 <body>
@@ -28,8 +28,8 @@
 
         <div id="kundfavoriter">
             <h2>Kundfavoriter</h2>
-            <div id="card">
-                <img src="mat.jpg" alt="mat">
+            <!-- <div id="card">
+                <img src="splash-desktop.png" alt="mat">
                 <div id="foodInfo">
                     <h2>Maträt</h2>
                     <h4>Typ</h4>
@@ -38,16 +38,38 @@
                     <h4>Innehåller: ???</h4>
                 </div>
                 <hr>
-                <div id="adaptation">
+                <div id="adaptations">
                     <h3>Anpssning</h3>
                     <ul>
 
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
-            <food-card image="mat.jpg" title="JJ's Super steak" numberofservings="10" cookingtime="30"></food-card>
-        </div>
+            <food-card image="mat.jpg" title="JJ's Super steak" mainingredient="Nöt" numberofservings="10"
+                cookingtime="30" contains="Tomat" :adaptationlist="['med vego', 'med fisk']">
+            </food-card>
+
+            <food-card image="yellow.png" title="Vegansk förrätt" mainingredient="Grönsaker" numberofservings="10"
+                cookingtime="10-15" contains="Gluten" :adaptationlist="['med fisk', 'glutenfri']">
+            </food-card>
+
+            <food-card image="splash-mobile.png" title="Fisk a la Becca" mainingredient="Fisk" numberofservings="10"
+                cookingtime="20-25" contains="Nötter" :adaptationlist="['med vego', 'glutenfri']"></food-card>
+            </food-card>
+
+            <food-card image="splash-mobile.png" title="Amor Antipasto" mainingredient="Fläsk" numberofservings="20"
+                cookingtime="10" contains="Stenfrukt" :adaptationlist="['med vego', 'med fisk']"></food-card>
+            </food-card>
+
+            <food-card image="splash-mobile.png" title="Mirres Morötter på tre viss" mainingredient="Vegetarisk" numberofservings="15"
+                cookingtime="10" contains="Morot"></food-card>
+            </food-card>
+
+            <!-- Exemple på slidern -->
+            <div class="range">
+                <range-slider :min="0" :max="100" :start-min="30" :start-max="50" :min-gap="1"></range-slider>
+            </div>
     </main>
 
     <footer>

@@ -72,10 +72,21 @@ main{
 
     h2{
         margin-top: 10px;
+        margin-bottom: 5px;
     }
 
     #foodInfo{
-        margin-right: 30px;
+        margin-right: 0px;
+        h4{
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+
+        /* ul{
+            padding-inline-start: 5px;
+            margin: 0px;
+            padding: 0px;
+        } */
     }
 }
 
