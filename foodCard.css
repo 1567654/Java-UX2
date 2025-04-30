@@ -1,0 +1,91 @@
+:root {
+    --color-1: #2D3134; 
+    --color-2: #5E5E5E; 
+    --color-3: #A6A6A6; 
+    --color-4: #E8E8E8; 
+    --color-5: #F8F5F5; 
+}
+
+/* html {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-1);
+} */
+
+ul{
+    padding-inline-start: 20px;
+    margin-top: 10px;
+    /* padding: 10px; */
+
+}
+
+#card{
+    display: flex;
+    height: 200px;
+    margin: 10px 0 10px 0;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: var(--color-5);
+    
+    border:solid;
+    border-radius: 15px;
+    border-color: var(--color-4);
+    img{
+        width: 200px;
+        height: 200px;
+        scale: 0.9;
+        border-radius: 15px;
+    }
+
+    hr{
+        background-color: var(--color-2);
+        border-color: var(--color-2);
+        color: var(--color-2);
+        height: 60%;
+
+        margin-Top: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h2{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    p{
+        margin-top: 45px;
+        margin-bottom: 0px;
+    }
+
+    h2, h4, ul, p{
+        color: var(--color-2);
+    }
+
+    #foodInfo{
+        margin-right: 0px;
+        h4{
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+
+        /* ul{
+            padding-inline-start: 5px;
+            margin: 0px;
+            padding: 0px;
+        } */
+    }
+
+    .ingredient-row {
+        display: flex;
+        align-items: center;
+        gap: 8px; /* mellanrum mellan ikon och text */
+    }
+}

@@ -40,52 +40,7 @@ main{
     border-radius: 0.5em;
 }
 
-#card{
-    display: flex;
-    height: 200px;
-    margin: 10px 0 10px 0;
 
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: lightblue;
-    
-    border-radius: 15px;
-    img{
-        width: 200px;
-        height: 200px;
-        scale: 0.9;
-        border-radius: 15px;
-    }
-
-    hr{
-        background-color:  black;
-        border-color: black;
-        height: 60%;
-
-        margin-Top: 50px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    h2{
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-
-    #foodInfo{
-        margin-right: 0px;
-        h4{
-            margin-top: 0px;
-            margin-bottom: 10px;
-        }
-
-        /* ul{
-            padding-inline-start: 5px;
-            margin: 0px;
-            padding: 0px;
-        } */
-    }
-}
 
 footer {
     box-sizing: border-box;
