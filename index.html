@@ -10,7 +10,10 @@
     <title>Document</title>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="./foodCardModule.js"></script>
+    <link rel="stylesheet" href="foodCard.css">
+    <link rel="stylesheet" href="rangeSlider.css">
+    <script type="module" src="./assets/modules/foodCardModule.js"></script>
+    <script type="module" src="./assets/modules/rangeSliderModule.js"></script>
 </head>
 
 <body>
@@ -46,30 +49,32 @@
                 </div>
             </div> -->
 
-            <food-card image="mat.jpg" title="JJ's Super steak" mainingredient="Nöt" numberofservings="10"
-                cookingtime="30" contains="Tomat" :adaptationlist="['med vego', 'med fisk']">
+            <food-card image="./assets/pictures/mat.jpg" title="JJ's Super steak" mainingredient="Nöt"
+                numberofservings="10" cookingtime="30" contains="Tomat" :adaptationlist="['med vego', 'med fisk']">
             </food-card>
 
-            <food-card image="yellow.png" title="Vegansk förrätt" mainingredient="Grönsaker" numberofservings="10"
-                cookingtime="10-15" contains="Gluten" :adaptationlist="['med fisk', 'glutenfri']">
+            <food-card image="./assets/pictures/yellow.png" title="Vegansk förrätt" mainingredient="Grönsaker"
+                numberofservings="10" cookingtime="10-15" contains="Gluten" :adaptationlist="['med fisk', 'glutenfri']">
             </food-card>
 
-            <food-card image="splash-mobile.png" title="Fisk a la Becca" mainingredient="Fisk" numberofservings="10"
-                cookingtime="20-25" contains="Nötter" :adaptationlist="['med vego', 'glutenfri']"></food-card>
+            <food-card image="./assets/pictures/splash-mobile.png" title="Fisk a la Becca" mainingredient="Fisk"
+                numberofservings="10" cookingtime="20-25" contains="Nötter" :adaptationlist="['med vego', 'glutenfri']">
             </food-card>
 
-            <food-card image="splash-mobile.png" title="Amor Antipasto" mainingredient="Fläsk" numberofservings="20"
-                cookingtime="10" contains="Stenfrukt" :adaptationlist="['med vego', 'med fisk']"></food-card>
+
+            <food-card image="./assets/pictures/splash-mobile.png" title="Amor Antipasto" mainingredient="Fläsk"
+                numberofservings="20" cookingtime="10" contains="Stenfrukt" :adaptationlist="['med vego', 'med fisk']">
             </food-card>
 
-            <food-card image="splash-mobile.png" title="Mirres Morötter på tre viss" mainingredient="Vegetarisk" numberofservings="15"
-                cookingtime="10" contains="Morot"></food-card>
+            <food-card image="./assets/pictures/splash-mobile.png" title="Mirres Morötter på tre viss"
+                mainingredient="Vegetarisk" numberofservings="15" cookingtime="10" contains="Morot">
             </food-card>
 
             <!-- Exemple på slidern -->
-            <div class="range">
+            <div class="range" id="range">
                 <range-slider :min="0" :max="100" :start-min="30" :start-max="50" :min-gap="1"></range-slider>
             </div>
+        </div>
     </main>
 
     <footer>
@@ -88,7 +93,7 @@
                         <div class="item-menu">
                             <button class="drop-button">
                                 Typ av rätt
-                                <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                                <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
                         <div class="item-content">
@@ -104,7 +109,7 @@
                         <div class="item-menu">
                             <button class="drop-button">
                                 Kategori
-                                <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                                <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
                         <div class="item-content">
@@ -120,7 +125,7 @@
                         <div class="item-menu">
                             <button class="drop-button">
                                 Anpassning
-                                <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                                <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
                         <div class="item-content">
@@ -136,7 +141,7 @@
                         <div class="item-menu">
                             <button class="drop-button">
                                 Allergier & Preferenser
-                                <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                                <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
                         <div class="item-content">
@@ -153,7 +158,7 @@
                         <div class="item-menu">
                             <button class="drop-button">
                                 Tema
-                                <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                                <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
                         <div class="item-content">
@@ -171,7 +176,7 @@
                         <div class="item-menu">
                             <button class="drop-button">
                                 Ingredienser
-                                <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                                <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
                         <div class="item-content">
@@ -203,7 +208,7 @@
                         <div class="item-menu">
                             <button class="drop-button">
                                 Tillagningsmetod
-                                <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                                <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
                         <div class="item-content">
@@ -219,7 +224,7 @@
                         <div class="item-menu">
                             <button class="drop-button">
                                 Tillagningstid
-                                <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                                <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
                         <div class="item-content">
@@ -243,7 +248,7 @@
                         <div class="item-menu">
                             <button class="drop-button">
                                 Förberedelsetid
-                                <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                                <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
                         <div class="item-content">
@@ -259,7 +264,7 @@
                         <div class="item-menu">
                             <button class="drop-button">
                                 Kostnad
-                                <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                                <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
                         <div class="item-content">
@@ -275,7 +280,7 @@
                         <div class="item-menu">
                             <button class="drop-button">
                                 Utrustning på plats
-                                <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                                <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
                         <div class="item-content">
@@ -291,7 +296,7 @@
                         <div class="item-menu">
                             <button class="drop-button">
                                 Buffé & Menyset
-                                <img class="drop" src="arrowdown.jpg" alt="dropdown arrow">
+                                <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
                         <div class="item-content">
