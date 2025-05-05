@@ -66,8 +66,8 @@ rangeSliderApp.component('range-slider', {
     <div >
       <div class="range-price">      
         <label for="min">Kortast tid</label>
-        <input type="number" id="min" name="min" :value="minValue" @input="updateMin">      
         <label for="max">Längsta tid</label>
+        <input type="number" id="min" name="min" :value="minValue" @input="updateMin">      
         <input type="number" id="max" name="max" :value="maxValue" @input="updateMax">      
       </div>
 

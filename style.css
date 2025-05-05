@@ -113,15 +113,20 @@ footer {
 .item-content {
     overflow:auto;
     display: grid;
-    grid-template-columns: repeat(2, 115px);
+    grid-template-columns: repeat(2, 85px);
     gap: 0.5em;
     border-bottom: 1px solid;
     height: 0px;
 }
 
-.item-content > h6 {
-    margin: 0;
-    grid-column: span 2;
+.add {
+    display: flex;
+    justify-content: end;
+}
+
+.add > button {
+    padding: 0.5em;
+    border-radius: 1em;
 }
 
 .tag {
@@ -147,25 +152,6 @@ footer {
 
 .tag:hover {
     border: 1px solid black;
-}
-
-.timer {
-    display: grid;
-    grid-template-columns: repeat(3, 6em);
-    grid-template-rows: repeat(2, 2em) ;
-}
-
-.gap {
-}
-
-.interval {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1em;
-    padding: 0.5em;
-    border: 1px solid black;
-    border-radius: 0.5em;
 }
 
 .filter-footer {

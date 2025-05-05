@@ -70,10 +70,6 @@
                 mainingredient="Vegetarisk" numberofservings="15" cookingtime="10" contains="Morot">
             </food-card>
 
-            <!-- Exemple på slidern -->
-            <div class="range" id="range">
-                <range-slider :min="0" :max="100" :start-min="30" :start-max="50" :min-gap="1"></range-slider>
-            </div>
         </div>
     </main>
 
@@ -227,20 +223,13 @@
                                 <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
-                        <div class="item-content">
-                            <div class="timer">
-                                <div>Kortast tid</div>
-                                <div></div>
-                                <div>Längsta tid</div>
-                                <div class="interval">
-                                    <div>10</div>
-                                    <div>min</div>
-                                </div>
-                                <div class="gap">-</div>
-                                <div class="interval">
-                                    <div>120</div>
-                                    <div>min</div>
-                                </div>
+                        <div class="item-content" id="content-range">
+                            <div class="range" id="range">
+                                <range-slider :min="0" :max="100" :start-min="30" :start-max="50"
+                                    :min-gap="1"></range-slider>
+                            </div>
+                            <div class="add">
+                                <button>Lägg till</button>
                             </div>
                         </div>
                     </div>
@@ -251,13 +240,14 @@
                                 <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
-                        <div class="item-content">
-                            <div class="tag">Förrätt</div>
-                            <div class="tag">Huvudrätt</div>
-                            <div class="tag">Efterrätt</div>
-                            <div class="tag">Aperitif</div>
-                            <div class="tag">Plockmat</div>
-                            <div class="tag">Snacks</div>
+                        <div class="item-content" id="content-range">
+                            <div class="range" id="range">
+                                <range-slider :min="0" :max="100" :start-min="30" :start-max="50"
+                                    :min-gap="1"></range-slider>
+                            </div>
+                            <div class="add">
+                                <button>Lägg till</button>
+                            </div>
                         </div>
                     </div>
                     <div class="item">
@@ -267,13 +257,14 @@
                                 <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
-                        <div class="item-content">
-                            <div class="tag">Förrätt</div>
-                            <div class="tag">Huvudrätt</div>
-                            <div class="tag">Efterrätt</div>
-                            <div class="tag">Aperitif</div>
-                            <div class="tag">Plockmat</div>
-                            <div class="tag">Snacks</div>
+                        <div class="item-content" id="content-range">
+                            <div class="range" id="range">
+                                <range-slider :min="0" :max="100" :start-min="30" :start-max="50"
+                                    :min-gap="1"></range-slider>
+                            </div>
+                            <div class="add">
+                                <button>Lägg till</button>
+                            </div>
                         </div>
                     </div>
                     <div class="item">
