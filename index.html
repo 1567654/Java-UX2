@@ -31,23 +31,6 @@
 
         <div id="kundfavoriter">
             <h2>Kundfavoriter</h2>
-            <!-- <div id="card">
-                <img src="splash-desktop.png" alt="mat">
-                <div id="foodInfo">
-                    <h2>Maträt</h2>
-                    <h4>Typ</h4>
-                    <h4>Antal potioner</h4>
-                    <h4>Tid</h4>
-                    <h4>Innehåller: ???</h4>
-                </div>
-                <hr>
-                <div id="adaptations">
-                    <h3>Anpssning</h3>
-                    <ul>
-
-                    </ul>
-                </div>
-            </div> -->
 
             <food-card image="./assets/pictures/mat.jpg" title="JJ's Super steak" mainingredient="Nöt"
                 numberofservings="10" cookingtime="30" contains="Tomat" :adaptationlist="['med vego', 'med fisk']">
@@ -76,7 +59,7 @@
                 <range-slider :min="0" :max="180" :start-min="60" :start-max="120" :min-gap="5"></range-slider>
             </div>
 
-          
+
         </div>
     </main>
 
@@ -230,20 +213,13 @@
                                 <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
-                        <div class="item-content">
-                            <div class="timer">
-                                <div>Kortast tid</div>
-                                <div></div>
-                                <div>Längsta tid</div>
-                                <div class="interval">
-                                    <div>10</div>
-                                    <div>min</div>
-                                </div>
-                                <div class="gap">-</div>
-                                <div class="interval">
-                                    <div>120</div>
-                                    <div>min</div>
-                                </div>
+                        <div class="item-content" id="content-range">
+                            <div class="range" id="range">
+                                <range-slider :min="0" :max="180" :start-min="10" :start-max="120"
+                                    :min-gap="1" label="tid"></range-slider>
+                            </div>
+                            <div class="add">
+                                <button>Lägg till</button>
                             </div>
                         </div>
                     </div>
@@ -254,13 +230,14 @@
                                 <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
-                        <div class="item-content">
-                            <div class="tag">Förrätt</div>
-                            <div class="tag">Huvudrätt</div>
-                            <div class="tag">Efterrätt</div>
-                            <div class="tag">Aperitif</div>
-                            <div class="tag">Plockmat</div>
-                            <div class="tag">Snacks</div>
+                        <div class="item-content" id="content-range">
+                            <div class="range" id="range">
+                                <range-slider :min="0" :max="180" :start-min="10" :start-max="120"
+                                    :min-gap="1" label="tid"></range-slider>
+                            </div>
+                            <div class="add">
+                                <button>Lägg till</button>
+                            </div>
                         </div>
                     </div>
                     <div class="item">
@@ -270,13 +247,14 @@
                                 <img class="drop" src="./assets/icons/arrowdown.jpg" alt="dropdown arrow">
                             </button>
                         </div>
-                        <div class="item-content">
-                            <div class="tag">Förrätt</div>
-                            <div class="tag">Huvudrätt</div>
-                            <div class="tag">Efterrätt</div>
-                            <div class="tag">Aperitif</div>
-                            <div class="tag">Plockmat</div>
-                            <div class="tag">Snacks</div>
+                        <div class="item-content" id="content-range">
+                            <div class="range" id="range">
+                                <range-slider :min="0" :max="1000" :start-min="200" :start-max="800"
+                                    :min-gap="1" label="pris"></range-slider>
+                            </div>
+                            <div class="add">
+                                <button>Lägg till</button>
+                            </div>
                         </div>
                     </div>
                     <div class="item">
@@ -287,12 +265,20 @@
                             </button>
                         </div>
                         <div class="item-content">
-                            <div class="tag">Förrätt</div>
-                            <div class="tag">Huvudrätt</div>
-                            <div class="tag">Efterrätt</div>
-                            <div class="tag">Aperitif</div>
-                            <div class="tag">Plockmat</div>
-                            <div class="tag">Snacks</div>
+                            <p>Vitvaror:</p>
+                            <br>
+                            <div class="tag">Ugn</div>
+                            <div class="tag">Spis</div>
+                            <div class="tag">Grill</div>
+                            <div class="tag">Kyl</div>
+                            <div class="tag">Frys</div>
+                            <br>
+                            <p>Köksattiraljer:</p>
+                            <br>
+                            <div class="tag">Stekpannor</div>
+                            <div class="tag">Ugnsformar</div>
+                            <div class="tag">Knivar</div>
+                            <div class="tag">Kastruller</div>
                         </div>
                     </div>
                     <div class="item">
@@ -303,12 +289,13 @@
                             </button>
                         </div>
                         <div class="item-content">
-                            <div class="tag">Förrätt</div>
-                            <div class="tag">Huvudrätt</div>
-                            <div class="tag">Efterrätt</div>
-                            <div class="tag">Aperitif</div>
-                            <div class="tag">Plockmat</div>
-                            <div class="tag">Snacks</div>
+                            <h6>Inkludera ingredienser</h6>
+                            <input type="text" id="searchbar" placeholder="Sök Buffé/Meny">
+                            <div class="tag">Vårbuffé</div>
+                            <div class="tag">3-rätters fisk</div>
+                            <div class="tag">Sommarbuffé</div>
+                            <div class="tag">5-rätters kött</div>
+                            <h6>klicka här för fler...</h6>
                         </div>
                     </div>
                 </div>

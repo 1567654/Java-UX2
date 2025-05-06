@@ -5,6 +5,7 @@ html {
 
 body {
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 header {
@@ -111,7 +112,7 @@ footer {
 }
 
 .item-content {
-    overflow:auto;
+    overflow:hidden;
     display: grid;
     grid-template-columns: repeat(2, 115px);
     gap: 0.5em;
@@ -145,27 +146,19 @@ footer {
     border: 1px solid lightgray;
 }
 
-.tag:hover {
+.tag:hover,
+.tag-L:hover {
     border: 1px solid black;
 }
 
-.timer {
-    display: grid;
-    grid-template-columns: repeat(3, 6em);
-    grid-template-rows: repeat(2, 2em) ;
-}
-
-.gap {
-}
-
-.interval {
+.add {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1em;
+    justify-content: end;
+}
+
+.add > button {
     padding: 0.5em;
-    border: 1px solid black;
-    border-radius: 0.5em;
+    border-radius: 1em;
 }
 
 .filter-footer {
