@@ -31,23 +31,6 @@
 
         <div id="kundfavoriter">
             <h2>Kundfavoriter</h2>
-            <!-- <div id="card">
-                <img src="splash-desktop.png" alt="mat">
-                <div id="foodInfo">
-                    <h2>Maträt</h2>
-                    <h4>Typ</h4>
-                    <h4>Antal potioner</h4>
-                    <h4>Tid</h4>
-                    <h4>Innehåller: ???</h4>
-                </div>
-                <hr>
-                <div id="adaptations">
-                    <h3>Anpssning</h3>
-                    <ul>
-
-                    </ul>
-                </div>
-            </div> -->
 
             <food-card image="./assets/pictures/mat.jpg" title="JJ's Super steak" mainingredient="Nöt"
                 numberofservings="10" cookingtime="30" contains="Tomat" :adaptationlist="['med vego', 'med fisk']">
@@ -232,7 +215,7 @@
                         </div>
                         <div class="item-content" id="content-range">
                             <div class="range" id="range">
-                                <range-slider :min="0" :max="100" :start-min="30" :start-max="50"
+                                <range-slider :min="0" :max="180" :start-min="10" :start-max="120"
                                     :min-gap="1" label="tid"></range-slider>
                             </div>
                             <div class="add">
@@ -249,7 +232,7 @@
                         </div>
                         <div class="item-content" id="content-range">
                             <div class="range" id="range">
-                                <range-slider :min="0" :max="100" :start-min="30" :start-max="50"
+                                <range-slider :min="0" :max="180" :start-min="10" :start-max="120"
                                     :min-gap="1" label="tid"></range-slider>
                             </div>
                             <div class="add">
@@ -266,7 +249,7 @@
                         </div>
                         <div class="item-content" id="content-range">
                             <div class="range" id="range">
-                                <range-slider :min="0" :max="100" :start-min="30" :start-max="50"
+                                <range-slider :min="0" :max="1000" :start-min="200" :start-max="800"
                                     :min-gap="1" label="pris"></range-slider>
                             </div>
                             <div class="add">

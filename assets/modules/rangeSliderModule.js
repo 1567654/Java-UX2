@@ -27,7 +27,7 @@ rangeSliderApp.component('range-slider', {
         updateMin(e) {
             let val = parseInt(e.target.value)
             //   console.log("this.maxValue: " + this.maxValue + " val: " + val)
-            if (val < 0) {
+            if (val < min) {
                 this.minValue = 0;
             }
             else if (val + this.minGap <= this.maxValue) {
@@ -41,7 +41,7 @@ rangeSliderApp.component('range-slider', {
         updateMax(e) {
             let val = parseInt(e.target.value)
             //   console.log("this.maxValue: " + this.maxValue + " val: " + val)
-            if (val > 100) {
+            if (val > max) {
                 this.maxValue = 100;
             }
             else if (val - this.minGap >= this.minValue) {
