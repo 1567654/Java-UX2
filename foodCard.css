@@ -6,17 +6,20 @@
     --color-5: #F8F5F5; 
 }
 
-/* html {
-    font-family: 'Times New Roman', Times, serif;
+html {
+    /* font-family: 'Inter', 'Regular';
+    font-style: inherit; */
     line-height: 1.5;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 body {
-    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px; 
+    /* margin: 0;
     padding: 0;
-    background-color: var(--color-1);
-} */
+    background-color: var(--color-1); */
+}
 
 ul{
     padding-inline-start: 20px;
@@ -37,6 +40,7 @@ ul{
     border:solid;
     border-radius: 15px;
     border-color: var(--color-4);
+
     img{
         width: 200px;
         height: 200px;
@@ -66,6 +70,7 @@ ul{
     }
 
     h2, h4, ul, p{
+        font-family: inherit;
         color: var(--color-2);
     }
 
