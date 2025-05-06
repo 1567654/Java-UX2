@@ -17,9 +17,11 @@ rangeSliderApp.component('range-slider', {
     },
     computed: {
         leftStyle() {
+            console.log("L: " +((this.minValue - this.min) / (this.max - this.min)) * 100 + '%');
             return ((this.minValue - this.min) / (this.max - this.min)) * 100 + '%';
         },
         rightStyle() {
+            console.log("R: " + (Math.round(100 - ((this.maxValue - this.min) / (this.max - this.min)) * 100) + '%'));
             return 100 - ((this.maxValue - this.min) / (this.max - this.min)) * 100 + '%';
         }
     },
