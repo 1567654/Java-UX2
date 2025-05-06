@@ -21,6 +21,9 @@ rangeSliderApp.component('range-slider', {
         minGap: {
             type: Number,
             default: 50
+        },
+        label: {
+            type: String
         }
     },
     data() {
@@ -41,19 +44,24 @@ rangeSliderApp.component('range-slider', {
         updateMin(e) {
             let val = parseInt(e.target.value)
             //   console.log("this.maxValue: " + this.maxValue + " val: " + val)
-            if (val + this.minGap <= this.maxValue) {
+            if (val < 0) {
+                this.minValue = 0;
+            }
+            else if (val + this.minGap <= this.maxValue) {
                 this.minValue = val;
             }
             else {
                 this.minValue = this.maxValue -this.minGap
-
             }
             //   console.log("minValue: "+  this.minValue)
         },
         updateMax(e) {
             let val = parseInt(e.target.value)
             //   console.log("this.maxValue: " + this.maxValue + " val: " + val)
-            if (val - this.minGap >= this.minValue) {
+            if (val > 100) {
+                this.maxValue = 100;
+            }
+            else if (val - this.minGap >= this.minValue) {
                 this.maxValue = val;
             }
             else {
@@ -65,8 +73,8 @@ rangeSliderApp.component('range-slider', {
     template: `
     <div >
       <div class="range-price">      
-        <label for="min">Kortast tid</label>
-        <label for="max">Längsta tid</label>
+        <label for="min">Minsta {{label}}</label>
+        <label for="max">Högsta {{label}}</label>
         <input type="number" id="min" name="min" :value="minValue" @input="updateMin">      
         <input type="number" id="max" name="max" :value="maxValue" @input="updateMax">      
       </div>
@@ -88,4 +96,4 @@ rangeSliderApp.component('range-slider', {
   `
 })
 
-rangeSliderApp.mount('#range')
+rangeSliderApp.mount('.right-body')
