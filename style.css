@@ -113,20 +113,15 @@ footer {
 .item-content {
     overflow:auto;
     display: grid;
-    grid-template-columns: repeat(2, 85px);
+    grid-template-columns: repeat(2, 120px);
     gap: 0.5em;
     border-bottom: 1px solid;
     height: 0px;
 }
 
-.add {
-    display: flex;
-    justify-content: end;
-}
-
-.add > button {
-    padding: 0.5em;
-    border-radius: 1em;
+.item-content > h6 {
+    margin: 0;
+    grid-column: span 2;
 }
 
 .tag {
@@ -150,8 +145,19 @@ footer {
     border: 1px solid lightgray;
 }
 
-.tag:hover {
+.tag:hover,
+.tag-L:hover {
     border: 1px solid black;
+}
+
+.add {
+    display: flex;
+    justify-content: end;
+}
+
+.add > button {
+    padding: 0.5em;
+    border-radius: 1em;
 }
 
 .filter-footer {
