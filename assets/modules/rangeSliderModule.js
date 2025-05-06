@@ -1,43 +1,26 @@
-const rangeSliderApp = Vue.createApp({})
+const rangeSliderApp = Vue.createApp({});
 
 rangeSliderApp.component('range-slider', {
     props: {
-        min: {
-            type: Number,
-            default: 0
-        },
-        max: {
-            type: Number,
-            default: 100
-        },
-        startMin: {
-            type: Number,
-            default: 20
-        },
-        startMax: {
-            type: Number,
-            default: 80
-        },
-        minGap: {
-            type: Number,
-            default: 50
-        },
-        label: {
-            type: String
-        }
+        min: { type: Number, default: 0 },
+        max: { type: Number, default: 100 },
+        startMin: { type: Number, default: 20 },
+        startMax: { type: Number, default: 80 },
+        minGap: { type: Number, default: 50 },
+        label: { type: String }
     },
     data() {
         return {
             minValue: this.startMin,
             maxValue: this.startMax
-        }
+        };
     },
     computed: {
         leftStyle() {
-            return ((this.minValue - this.min) / (this.max - this.min)) * 100 + '%'
+            return ((this.minValue - this.min) / (this.max - this.min)) * 100 + '%';
         },
         rightStyle() {
-            return 100 - ((this.maxValue - this.min) / (this.max - this.min)) * 100 + '%'
+            return 100 - ((this.maxValue - this.min) / (this.max - this.min)) * 100 + '%';
         }
     },
     methods: {
@@ -71,7 +54,7 @@ rangeSliderApp.component('range-slider', {
         }
     },
     template: `
-    <div >
+    <div class="range-wrapper">
       <div class="range-price">      
         <label for="min">Minsta {{label}}</label>
         <label for="max">Högsta {{label}}</label>
@@ -89,11 +72,11 @@ rangeSliderApp.component('range-slider', {
       </div>
 
       <div class="range-endpoints">
-        <p>{{min}}</p>
-        <p>{{max}}</p>
+        <p>{{ min }}</p>
+        <p>{{ max }}</p>
       </div>
     </div>
   `
-})
+});
 
 rangeSliderApp.mount('.right-body')

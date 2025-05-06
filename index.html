@@ -53,6 +53,7 @@
                 numberofservings="10" cookingtime="30" contains="Tomat" :adaptationlist="['med vego', 'med fisk']">
             </food-card>
 
+
             <food-card image="./assets/pictures/yellow.png" title="Vegansk förrätt" mainingredient="Grönsaker"
                 numberofservings="10" cookingtime="10-15" contains="Gluten" :adaptationlist="['med fisk', 'glutenfri']">
             </food-card>
@@ -69,6 +70,12 @@
             <food-card image="./assets/pictures/splash-mobile.png" title="Mirres Morötter på tre viss"
                 mainingredient="Vegetarisk" numberofservings="15" cookingtime="10" contains="Morot">
             </food-card>
+
+            <!-- Exemple på slidern -->
+            <div class="range" id="range">
+                <range-slider :min="0" :max="180" :start-min="60" :start-max="120" :min-gap="5"></range-slider>
+            </div>
+
 
         </div>
     </main>
