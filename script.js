@@ -36,7 +36,7 @@ filterBody.addEventListener('click', (evt) => {
         let targetContent = target.children[1]
         let itemState = targetContent.style.height
         if (itemState < '200px') {
-            targetContent.style.height = '200px'
+            targetContent.style.height = 'auto'
             drop.style.transform = 'rotate(180deg)'
         } else {
             targetContent.style.height = '0px'
